@@ -10,29 +10,50 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- Flow-Text for Headers -->
     <link rel="stylesheet" href="assets/styles/flowHeaders.min.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
     <!-- Main Styles -->
     <link rel="stylesheet" href="assets/styles/main.css">
 </head>
 
 <body>
     <div id="portfolio-intro" class="valign-wrapper">
-        <h3 id="greeting" class="flow-text"> Hello, I am <span class="highlighted">Matthew Chen</span>.
-            <br> I am a
-            full-stack developer.</h3>
-            
+        <div id="greeting">
+            <h3 class="flow-text"> Hello, I'm <span class="highlighted">Matthew Chen</span>.
+                <br> I'm a
+                full-stack developer. <br>
+            </h3>
+            <div class="center-align">
+                <a href="#about" id="goToAbout" class="waves-effect waves-light btn-small">I'm also...&nbsp;<i
+                        class="icon about"></i></a>
+            </div>
+        </div>
+
+
+
+
+
     </div>
-    <div id="portfolio-content" class="block">
+
+    <div id="portfolio-content" class="">
         <ul class="pin-top tabs tabs-fixed-width deep-purple lighten-4
         " data-target="portfolio-content">
-        <li class="tab"><a class="active" href="#projects">My Work</a></li>
+            <li class="tab"><a class="active" href="#about">About</a></li>
 
-            <li class="tab"><a href="#about">About</a></li>
+            <li class="tab"><a href="#projects">My Work</a></li>
+
             <li class="tab"><a href="#contact">Contact</a></li>
         </ul>
 
-        <div id="projects" class="portfolio-section scrollspy valign-wrapper"> <h3 class="center-content">This is the projects section!</h3></div>
-        <div id="about" class="portfolio-section scrollspy valign-wrapper"> <h3 class="center-content">This is the about section!</h3></div>
-        <div id="contact" class="portfolio-section scrollspy valign-wrapper"> <h3 class="center-content">This is the contact section!</h3></div>
+        <div id="about" class="portfolio-section scrollspy valign-wrapper">
+            <h3 class="center-content">This is the about section!</h3>
+        </div>
+        <div id="projects" class="portfolio-section scrollspy valign-wrapper">
+            <h3 class="center-content">This is the projects section!</h3>
+        </div>
+        <div id="contact" class="portfolio-section scrollspy valign-wrapper">
+            <h3 class="center-content">This is the contact section!</h3>
+        </div>
 
 
     </div>
@@ -44,6 +65,8 @@
     <!-- Materialize: Compiled and minified JavaScript -->
     <script src="assets/scripts/materialize.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/325ada46a1.js"></script>
     <!-- My Main JS -->
     <script src="assets/scripts/main.js"></script>
 </body>

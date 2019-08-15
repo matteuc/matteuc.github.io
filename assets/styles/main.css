@@ -10,16 +10,25 @@ body {
     height: 100vh;
 }
 
-#portfolio-content {
-}
+#portfolio-content {}
 
 .portfolio-section {
-    height: 60vh;
+    height: 100vh;
+}
+
+#projects {
+    background-image: radial-gradient(#a9cff4, #5eaaf7);
+}
+
+#about {
+    background-image: radial-gradient(#ddfff7, #97fde5);
 }
 
 #contact {
-    height: 100vh;
+    background-image: radial-gradient(#efc7c2, #f58b7d);
+
 }
+
 
 #greeting {
     color: white;
@@ -40,22 +49,62 @@ body {
 
 }
 
+#goToAbout {
+    display: inline-block;
+    margin: auto;
+}
+
+.icon::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+.about:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+
+    content: "\f0eb";
+}
+
+#goToAbout:hover .about:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+
+    content: "\f0eb";
+}
+
 /* Customized Tabs CSS */
-.tabs .tab a{
-    color:white;
+.tabs .tab a {
+    color: white;
     font-weight: bold;
-} /*Black color to the text*/
+}
+
+/*Black color to the text*/
 
 .tabs .tab a:hover {
-    background-color:#A9CEF4;
-    color:white;
-} /*Text color on hover*/
+    background-color: #A9CEF4;
+    color: white;
+}
+
+/*Text color on hover*/
 
 .tabs .tab a.active {
-    background-color:#c09bd8;
-    color:white;
-} /*Background and text color when a tab is active*/
+    background-color: #c09bd8;
+    color: white;
+    border-bottom: 2px solid rgb(124, 245, 204);
+}
+
+/*Background and text color when a tab is active*/
 
 .tabs .indicator {
-    background-color:rgb(124, 245, 204);
-} /*Color of underline*/
+    /* background-color:rgb(124, 245, 204); */
+    background-color: transparent;
+    /* hiding indicator from view */
+
+}
+
+/*Color of underline*/

@@ -6289,7 +6289,7 @@ $jscomp.polyfill = function (e, r, p, m) {
         });
 
         if (ScrollSpy._visibleElements[0]) {
-          $(this.options.getActiveElement(ScrollSpy._visibleElements[0].attr('id'))).removeClass(this.options.activeClass);
+          $(this.options.getActiveElement(ScrollSpy._visibleElements[0].attr('id'))).removeClass(this.options.activeClass, 1000);
           if (ScrollSpy._visibleElements[0][0].M_ScrollSpy && this.id < ScrollSpy._visibleElements[0][0].M_ScrollSpy.id) {
             ScrollSpy._visibleElements.unshift(this.$el);
           } else {
@@ -6299,7 +6299,7 @@ $jscomp.polyfill = function (e, r, p, m) {
           ScrollSpy._visibleElements.push(this.$el);
         }
 
-        $(this.options.getActiveElement(ScrollSpy._visibleElements[0].attr('id'))).addClass(this.options.activeClass);
+        $(this.options.getActiveElement(ScrollSpy._visibleElements[0].attr('id'))).addClass(this.options.activeClass, 1000);
       }
     }, {
       key: "_exit",
@@ -6311,13 +6311,13 @@ $jscomp.polyfill = function (e, r, p, m) {
         });
 
         if (ScrollSpy._visibleElements[0]) {
-          $(this.options.getActiveElement(ScrollSpy._visibleElements[0].attr('id'))).removeClass(this.options.activeClass);
+          $(this.options.getActiveElement(ScrollSpy._visibleElements[0].attr('id'))).removeClass(this.options.activeClass, 1000);
           ScrollSpy._visibleElements = ScrollSpy._visibleElements.filter(function (el) {
             return el.attr('id') != _this36.$el.attr('id');
           });
           if (ScrollSpy._visibleElements[0]) {
             // Check if empty
-            $(this.options.getActiveElement(ScrollSpy._visibleElements[0].attr('id'))).addClass(this.options.activeClass);
+            $(this.options.getActiveElement(ScrollSpy._visibleElements[0].attr('id'))).addClass(this.options.activeClass, 1000);
 
           }
         }
