@@ -3,11 +3,6 @@ body {
     height: 100%;
 }
 
-/* Allows jumping to elements on the page via scrolling */
-html {
-    scroll-behavior: smooth;
-}
-
 #portfolio-intro {
     background-image: radial-gradient(rgb(90, 90, 175), midnightblue);
     /* background-color: midnightblue; */
@@ -16,7 +11,14 @@ html {
 }
 
 #portfolio-content {
-    height: 200vh;
+}
+
+.portfolio-section {
+    height: 60vh;
+}
+
+#contact {
+    height: 100vh;
 }
 
 #greeting {
@@ -33,7 +35,27 @@ html {
 }
 
 .highlighted {
-    color: mediumaquamarine;
+    color: rgb(124, 245, 204);
     text-shadow: rgb(138, 211, 187) 1px 0 10px;
 
 }
+
+/* Customized Tabs CSS */
+.tabs .tab a{
+    color:white;
+    font-weight: bold;
+} /*Black color to the text*/
+
+.tabs .tab a:hover {
+    background-color:#A9CEF4;
+    color:white;
+} /*Text color on hover*/
+
+.tabs .tab a.active {
+    background-color:#c09bd8;
+    color:white;
+} /*Background and text color when a tab is active*/
+
+.tabs .indicator {
+    background-color:rgb(124, 245, 204);
+} /*Color of underline*/

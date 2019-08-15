@@ -1,6 +1,10 @@
   $(document).ready(function () {
-      $('.tabs').tabs();
       $('.pushpin').pushpin();
+      $('.scrollspy').scrollSpy();
+    //   Line 4290, 4141, & 4149 control tabs hiding content
+      $('.tabs').tabs();
+    //   Line 6314 controls adding active class during scrolling
+    // Line 4094 Tab click
 
       $('.pin-top').each(function () {
           var $this = $(this);
