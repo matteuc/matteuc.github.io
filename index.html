@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- Flow-Text for Headers -->
     <link rel="stylesheet" href="assets/styles/flowHeaders.min.css">
+    <!-- AOS CSS CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
     <!-- Main Styles -->
@@ -29,10 +31,6 @@
             </div>
         </div>
 
-
-
-
-
     </div>
 
     <div id="portfolio-content" class="">
@@ -46,13 +44,29 @@
         </ul>
 
         <div id="about" class="portfolio-section scrollspy valign-wrapper">
-            <h3 class="center-content">This is the about section!</h3>
+            <div class="portfolio-section-content">
+                <div class="row">
+                    <h3 class="flow-text">This is the about section!</h3>
+                </div>
+                <div class="row">
+                    <div class="col s6" data-aos="fade-right">
+                        I'm fading in from the left!
+                    </div>
+                    <div class="col s6" data-aos="fade-left">
+                        I'm fading in from the right!
+                    </div>
+                </div>
+            </div>
         </div>
         <div id="projects" class="portfolio-section scrollspy valign-wrapper">
-            <h3 class="center-content">This is the projects section!</h3>
+            <div class="portfolio-section-content">
+                <h3 class="flow-text">This is the projects section!</h3>
+            </div>
         </div>
         <div id="contact" class="portfolio-section scrollspy valign-wrapper">
-            <h3 class="center-content">This is the contact section!</h3>
+            <div class="portfolio-section-content">
+                <h3 class="flow-text">This is the contact section!</h3>
+            </div>
         </div>
 
 
@@ -62,11 +76,15 @@
     <!-- jQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- AOS JS CDN -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Materialize: Compiled and minified JavaScript -->
     <script src="assets/scripts/materialize.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
     <!-- Font Awesome CDN -->
     <script src="https://kit.fontawesome.com/325ada46a1.js"></script>
+    <!-- Customized Materialize JS -->
+    <script src="assets/scripts/myMaterialize.js"></script>
     <!-- My Main JS -->
     <script src="assets/scripts/main.js"></script>
 </body>

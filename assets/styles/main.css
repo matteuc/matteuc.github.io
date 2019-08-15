@@ -16,6 +16,10 @@ body {
     height: 100vh;
 }
 
+.portfolio-section-content {
+    margin: auto;
+}
+
 #projects {
     background-image: radial-gradient(#a9cff4, #5eaaf7);
 }
@@ -34,8 +38,6 @@ body {
     color: white;
     /* Necessary for centering elements */
     margin: auto;
-
-
 }
 
 .center-content {

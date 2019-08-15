@@ -6105,7 +6105,7 @@ $jscomp.polyfill = function (e, r, p, m) {
 
   var _defaults = {
     throttle: 100,
-    scrollOffset: 200, // offset - 200 allows elements near bottom of page to scroll
+    scrollOffset: 100, // offset - 200 allows elements near bottom of page to scroll
     activeClass: 'active',
     getActiveElement: function (id) {
       return 'a[href="#' + id + '"]';
@@ -6345,6 +6345,7 @@ $jscomp.polyfill = function (e, r, p, m) {
         for (var i = 0; i < ScrollSpy._elements.length; i++) {
           var scrollspy = ScrollSpy._elements[i];
           var currTop = top + scrollspy.options.scrollOffset || 200;
+          console.log(scrollspy.options.scrollOffset);
 
           if (scrollspy.$el.height() > 0) {
             var elTop = scrollspy.$el.offset().top,
