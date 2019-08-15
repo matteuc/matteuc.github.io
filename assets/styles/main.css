@@ -1,0 +1,39 @@
+html,
+body {
+    height: 100%;
+}
+
+/* Allows jumping to elements on the page via scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+#portfolio-intro {
+    background-image: radial-gradient(rgb(90, 90, 175), midnightblue);
+    /* background-color: midnightblue; */
+    padding: 5vw;
+    height: 100vh;
+}
+
+#portfolio-content {
+    height: 200vh;
+}
+
+#greeting {
+    color: white;
+    /* Necessary for centering elements */
+    margin: auto;
+
+
+}
+
+.center-content {
+    /* Necessary for centering elements */
+    margin: auto;
+}
+
+.highlighted {
+    color: mediumaquamarine;
+    text-shadow: rgb(138, 211, 187) 1px 0 10px;
+
+}
