@@ -3,21 +3,44 @@ body {
     height: 100%;
 }
 
+#nav-tabs {
+    z-index: 1000;
+    font-family: 'Poppins', sans-serif;
+
+}
+
 #portfolio-intro {
     background-image: radial-gradient(rgb(90, 90, 175), midnightblue);
     /* background-color: midnightblue; */
     padding: 5vw;
     height: 100vh;
+    font-family: 'Poppins', sans-serif;
+
 }
 
 #portfolio-content {}
 
 .portfolio-section {
     height: 100vh;
+    padding: 10px;
 }
 
 .portfolio-section-content {
-    margin: auto;
+    /* margin: auto; */
+}
+
+.section-title {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+#headshot {
+    width: 150px;
+    border-radius: 50%;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
 }
 
 #projects {
@@ -25,7 +48,8 @@ body {
 }
 
 #about {
-    background-image: radial-gradient(#ddfff7, #97fde5);
+    background-image: url(../media/about-background.jpg);
+
 }
 
 #contact {
