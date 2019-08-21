@@ -10,7 +10,7 @@ body {
 }
 
 #portfolio-intro {
-    background-image: radial-gradient(rgb(90, 90, 175), midnightblue);
+    background-image: radial-gradient(rgb(85, 116, 255), midnightblue);
     /* background-color: midnightblue; */
     padding: 5vw;
     height: 100vh;
@@ -47,21 +47,30 @@ body {
     box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
 }
 
+#bio {
+    font-size: 1.2rem;
+}
+
 #projects {
     background-image: radial-gradient(#a9cff4, #5eaaf7);
 }
 
 #about {
     background-image: url(../media/about-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
 
 }
 
 #contact {
-    background-image: radial-gradient(#efc7c2, #f58b7d);
+    background-image: radial-gradient(#036e8b, #004e64);
 
 }
 
-
+#contact-title {
+    color: white;
+}
 #greeting {
     color: white;
     /* Necessary for centering elements */
@@ -113,17 +122,15 @@ body {
     font-weight: bold;
 }
 
-/*Black color to the text*/
-
+/*Text color on hover*/
 .tabs .tab a:hover {
-    background-color: #A9CEF4;
+    background-color: #00A5cf;
     color: white;
 }
 
-/*Text color on hover*/
 
 .tabs .tab a.active {
-    background-color: #c09bd8;
+    background-color: #004e64;
     color: white;
     border-bottom: 2px solid rgb(124, 245, 204);
 }
