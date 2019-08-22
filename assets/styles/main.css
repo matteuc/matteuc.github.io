@@ -144,6 +144,11 @@ body {
     border-bottom: 2px solid rgb(124, 245, 204);
 }
 
+.tabs .tab a:focus, .tabs .tab a:focus.active {
+    background-color: midnightblue;
+    outline: none;
+}
+
 /*Background and text color when a tab is active*/
 
 .tabs .indicator {
