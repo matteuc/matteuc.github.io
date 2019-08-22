@@ -32,7 +32,6 @@ body {
 .section-title {
     text-align: center;
     font-family: 'Poppins', sans-serif;
-
 }
 
 .brand-icon {
@@ -68,7 +67,11 @@ body {
     height: auto;
 }
 
-#contact-title {
+#projects {
+    height: auto;
+}
+
+#contact-title, #projects-title {
     color: white;
 }
 
@@ -200,4 +203,16 @@ footer {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+.card .card-title {
+    font-weight: 400;
+}
+
+.card .card-image .card-title {
+    color: white;
+}
+
+.card .card-content p {
+    margin-top: 10px;
 }

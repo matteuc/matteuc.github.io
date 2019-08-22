@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>matt.c</title>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- Flow-Text for Headers -->
@@ -16,6 +16,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
     <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap">
+    <!-- Browser Icon -->
+    <link rel="icon" href="assets/media/tab-icon.png">
+
     <!-- Main Styles -->
     <link rel="stylesheet" href="assets/styles/main.css">
 </head>
@@ -68,22 +71,88 @@
                             <p class="flow-text"> The Stack</p>
                         </div>
                         <div class="row">
-                            <img class="brand-icon tooltipped" data-position="left" data-tooltip="HTML5" src="assets/media/html-icon.png">
-                            <img class="brand-icon tooltipped" data-position="top" data-tooltip="CSS3" src="assets/media/css-icon.jpg">
-                            <img class="brand-icon tooltipped" data-position="right" data-tooltip="Javascript" src="assets/media/javascript-icon.png">
+                            <img class="brand-icon tooltipped" data-position="left" data-tooltip="HTML5"
+                                src="assets/media/html-icon.png">
+                            <img class="brand-icon tooltipped" data-position="top" data-tooltip="CSS3"
+                                src="assets/media/css-icon.jpg">
+                            <img class="brand-icon tooltipped" data-position="right" data-tooltip="Javascript"
+                                src="assets/media/javascript-icon.png">
                         </div>
                         <div class="row">
-                            <img class="brand-icon tooltipped" data-position="left" data-tooltip="Firebase" src="assets/media/firebase-icon.png">
-                            <img class="brand-icon tooltipped" data-position="bottom" data-tooltip="Node.js" src="assets/media/node-icon.png">
-                            <img class="brand-icon tooltipped" data-position="right" data-tooltip="Java" src="assets/media/java-icon.png">
+                            <img class="brand-icon tooltipped" data-position="left" data-tooltip="Firebase"
+                                src="assets/media/firebase-icon.png">
+                            <img class="brand-icon tooltipped" data-position="bottom" data-tooltip="Node.js"
+                                src="assets/media/node-icon.png">
+                            <img class="brand-icon tooltipped" data-position="right" data-tooltip="Vue.js"
+                                src="assets/media/vue-icon.png">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div id="projects" class="portfolio-section scrollspy valign-wrapper">
-            <div class="portfolio-section-content">
-                <h3 class="flow-text">This is the projects section!</h3>
+            <div class="portfolio-section-content container">
+                <div class="row">
+                    <h1 data-aos="flip-up" id="projects-title" class="flow-text section-title">My Work</h1>
+                </div>
+                <div class="row">
+                    <div data-aos="fade-right" class="col s12 m10 offset-m1 l6">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="assets/media/pokemon-stay-thumbnail.PNG">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator blue-text text-darken-4">Pokemon Stay <a
+                                        target="_blank" href="https://ucsd-teamwork-projects.github.io/Pokemon-Stay/"
+                                        class="btn-floating waves-effect waves-light blue lighten-3 right"><i
+                                            style="line-height: 40px" class="fas fa-globe-americas"></i></a>
+
+                                </span>
+                                <p>A Pokemon-Go inspired game designed for physically challenged trainers to explore the
+                                    world of Pokemon.</p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title blue-text text-darken-4">Pokemon Stay<i
+                                        class="fas fa-times right"></i></span>
+                                <p>Through the <strong>PokéAPI</strong>, <strong class="blue-text text-darken-4">Pokemon
+                                        Stay</strong> is populated by 649 Pokemon sprites. Via Firebase's
+                                    <strong>Realtime Database</strong>, trainers are able to save their current location
+                                    and collection of Pokemon. The <strong>Google Maps API</strong> allows trainers to
+                                    travel across the globe - discovering, fighting, and catchin' them all.</p>
+                                <p><strong>Design Framework:</strong> <span class="purple-text text-lighten-2">Bootstrap</span></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-left" class="col s12 m10 offset-m1 l6">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="assets/media/giftastic-thumbnail.PNG">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator orange-text text-darken-4">GifTastic<a target="_blank"
+                                        href="https://matteuc.github.io/GifTastic-Project/"
+                                        class="btn-floating waves-effect waves-light orange lighten-3 right"><i
+                                            style="line-height: 40px" class="fas fa-star"></i></a>
+
+                                </span>
+                                <p>A single page application that allows the user to search and save GIFs from GIPHY.
+                                </p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title orange-text text-darken-4">GifTastic<i
+                                        class="fas fa-times right"></i></span>
+                                <p>Through the <strong>GIPHY API</strong>, <span
+                                        class="orange-text text-darken-4">GifTastic</span> pulls a fixed number of GIFs
+                                    based on the entered search term. Users can favorite GIFs, which the app stores in
+                                    local storage to allow for data persistence. Popular searches can be transformed
+                                    into buttons to quickly access your favorite GIFs.</p>
+                                <p><strong>Design Framework:</strong> <span class="cyan-text text-lighten-2">Material
+                                        Design</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div id="contact" class="portfolio-section scrollspy center-align">
