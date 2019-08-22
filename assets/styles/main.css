@@ -71,7 +71,8 @@ body {
     height: auto;
 }
 
-#contact-title, #projects-title {
+#contact-title,
+#projects-title {
     color: white;
 }
 
@@ -144,7 +145,8 @@ body {
     border-bottom: 2px solid rgb(124, 245, 204);
 }
 
-.tabs .tab a:focus, .tabs .tab a:focus.active {
+.tabs .tab a:focus,
+.tabs .tab a:focus.active {
     background-color: midnightblue;
     outline: none;
 }
@@ -220,4 +222,11 @@ a {
 
 .card .card-content p {
     margin-top: 10px;
+}
+
+/* Customized Flowheaders */
+@media only screen and (max-width: 360px) {
+    h3.flow-text {
+        font-size: 1.2rem;
+    }
 }
