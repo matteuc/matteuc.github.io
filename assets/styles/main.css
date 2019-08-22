@@ -65,12 +65,13 @@ body {
 
 #contact {
     background-image: radial-gradient(#036e8b, #004e64);
-
+    height: auto;
 }
 
 #contact-title {
     color: white;
 }
+
 #greeting {
     color: white;
     /* Necessary for centering elements */
@@ -109,10 +110,15 @@ body {
     content: "\f0eb";
 }
 
+.send:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f1d8";
+}
+
 #goToAbout:hover .about:before {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-
     content: "\f0eb";
 }
 
@@ -130,7 +136,7 @@ body {
 
 
 .tabs .tab a.active {
-    background-color: #004e64;
+    background-color: midnightblue;
     color: white;
     border-bottom: 2px solid rgb(124, 245, 204);
 }
@@ -144,4 +150,54 @@ body {
 
 }
 
-/*Color of underline*/
+input,
+textarea {
+    color: white;
+}
+
+/* label color */
+.input-field label {
+    color: rgb(124, 245, 204);
+}
+
+/* label focus color */
+.input-field input[type=text]:focus+label {
+    color: rgb(124, 245, 204);
+}
+
+/* label underline focus color */
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+
+footer {
+    border-top: 1px solid #78909c;
+}
+
+#copyright {
+    color: rgb(124, 245, 204);
+}
+
+#footer-name {
+    color: #90a4ae;
+}
+
+.footer-icon {
+    border-radius: 25%;
+    padding: 15px;
+    background-color: #607d8b;
+    margin: 15px;
+}
+
+.footer-icon:hover {
+    background-color: rgb(124, 245, 204);
+    /* -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1); */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

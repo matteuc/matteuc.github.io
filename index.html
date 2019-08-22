@@ -68,14 +68,14 @@
                             <p class="flow-text"> The Stack</p>
                         </div>
                         <div class="row">
-                            <img class="brand-icon" src="assets/media/html-icon.png">
-                            <img class="brand-icon" src="assets/media/css-icon.jpg">
-                            <img class="brand-icon" src="assets/media/javascript-icon.png">
+                            <img class="brand-icon tooltipped" data-position="left" data-tooltip="HTML5" src="assets/media/html-icon.png">
+                            <img class="brand-icon tooltipped" data-position="top" data-tooltip="CSS3" src="assets/media/css-icon.jpg">
+                            <img class="brand-icon tooltipped" data-position="right" data-tooltip="Javascript" src="assets/media/javascript-icon.png">
                         </div>
                         <div class="row">
-                            <img class="brand-icon" src="assets/media/firebase-icon.png">
-                            <img class="brand-icon" src="assets/media/node-icon.png">
-                            <img class="brand-icon" src="assets/media/java-icon.png">
+                            <img class="brand-icon tooltipped" data-position="left" data-tooltip="Firebase" src="assets/media/firebase-icon.png">
+                            <img class="brand-icon tooltipped" data-position="bottom" data-tooltip="Node.js" src="assets/media/node-icon.png">
+                            <img class="brand-icon tooltipped" data-position="right" data-tooltip="Java" src="assets/media/java-icon.png">
                         </div>
                     </div>
                 </div>
@@ -86,13 +86,63 @@
                 <h3 class="flow-text">This is the projects section!</h3>
             </div>
         </div>
-        <div id="contact" class="portfolio-section scrollspy valign-wrapper">
+        <div id="contact" class="portfolio-section scrollspy center-align">
             <div class="portfolio-section-content container">
                 <div class="row">
                     <h1 data-aos="flip-up" id="contact-title" class="flow-text section-title">Contact Me</h1>
                 </div>
+                <div class="row" data-aos="zoom-in">
+
+                    <form class="col s12" action="https://formspree.io/matteu.chen@gmail.com" method="POST">
+
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input autocomplete="off" id="email" name="email" type="email" class="validate">
+                                <label for="email">Your Email</label>
+                                <span class="helper-text" data-error="Invalid Email!"
+                                    data-success="Email verified!"></span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea name="message" id="textarea1" class="materialize-textarea"></textarea>
+                                <label for="textarea1">Your Message</label>
+                            </div>
+                        </div>
+                        <div class="row center-align">
+                            <button type="submit"
+                                class="btn-floating btn-large waves-effect waves-light blue lighten-3"><i
+                                    class="icon send"></i></button>
+                        </div>
+
+                    </form>
+                </div>
+
             </div>
         </div>
+
+        <footer class="page-footer blue-grey darken-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 center">
+                        <a href="https://www.linkedin.com/in/matthew-chen-1ba818155/" target="_blank"><i
+                                class="footer-icon fab fa-linkedin-in fa-2x"></i></a>
+                        <a href="https://github.com/matteuc" target="_blank"><i
+                                class="footer-icon fab fa-github-alt fa-2x"></i></a>
+                        <a href="https://codepen.io/matteuc" target="_blank"><i
+                                class="footer-icon fab fa-codepen fa-2x"></i></a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container center">
+                    <span id="footer-name">matthew chen</span> <span id="copyright">©2019</span>
+
+                </div>
+            </div>
+        </footer>
 
 
     </div>
