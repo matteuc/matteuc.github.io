@@ -24,6 +24,7 @@ body {
 .portfolio-section {
     height: 100vh;
     padding: 10px;
+    overflow: hidden;
 }
 
 .portfolio-section-content {
@@ -56,7 +57,7 @@ body {
 }
 
 #about {
-    background-image: url(../media/about-background.jpg);
+    background-image: url("../media/about-background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: auto;
