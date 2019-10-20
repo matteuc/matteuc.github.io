@@ -1,6 +1,7 @@
 html,
 body {
-    height: 100%;
+    /* height: 100%; */
+    max-width: 100%;
 }
 
 #nav-tabs {
@@ -142,14 +143,14 @@ body {
 
 
 .tabs .tab a.active {
-    background-color: midnightblue;
+    background-color: #036e8b;
     color: white;
     border-bottom: 2px solid rgb(124, 245, 204);
 }
 
 .tabs .tab a:focus,
 .tabs .tab a:focus.active {
-    background-color: midnightblue;
+    background-color: #036e8b;
     outline: none;
 }
 
