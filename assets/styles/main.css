@@ -31,7 +31,7 @@ body {
 
 .section-title {
     text-align: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 .brand-icon {
@@ -51,7 +51,7 @@ body {
 }
 
 #projects {
-    background-image: radial-gradient(#a9cff4, #5eaaf7);
+    background-image: radial-gradient(#a9cff4, #FBFBFF);
 }
 
 #about {
@@ -71,9 +71,12 @@ body {
     height: auto;
 }
 
-#contact-title,
-#projects-title {
+#contact-title {
     color: white;
+}
+
+#projects-title {
+    color: black
 }
 
 #greeting {
@@ -105,7 +108,6 @@ body {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
 }
-
 
 .about:before {
     font-family: "Font Awesome 5 Free";
